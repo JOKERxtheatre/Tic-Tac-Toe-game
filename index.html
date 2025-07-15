@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1021/1021366.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="gameContainer">
+        <h1><span style="color: #1230AE;">T</span>ic
+            <span style="color: #C62300;">T</span>ac
+            <span style="color: #1230AE;">T</span>oe
+        </h1>
+        <div class="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+            <div class="line" id="winLine"></div>
+        </div>
+        <h2 id="statusText"></h2>
+        <div class="galaxy-button">
+            <button class="space-button" id="restartBtn">
+                <span class="backdrop"></span>
+                <span class="galaxy"></span>
+                <label class="text">Restart</label>
+            </button>
+            <div class="bodydrop"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
