@@ -96,31 +96,8 @@ function drawStars() {
             ctx.fill();
         }
     });
-
-    shockwaves.forEach((wave, index) => {
-        wave.radius += 5;
-        wave.alpha -= 0.02;
-        ctx.beginPath();
-        ctx.arc(wave.x, wave.y, wave.radius, 0, Math.PI * 2);
-        ctx.strokeStyle = `rgba(255, 255, 255, ${wave.alpha})`;
-        ctx.lineWidth = 4;
-        ctx.shadowBlur = 30;
-        ctx.shadowColor = "white";
-        ctx.stroke();
-        if (wave.alpha <= 0) {
-            shockwaves.splice(index, 1);
-        }
-    });
 }
 
-document.addEventListener("click", (event) => {
-    shockwaves.push({
-        x: event.clientX,
-        y: event.clientY,
-        radius: 10,
-        alpha: 1
-    });
-});
 
 function animate() {
     drawStars();
